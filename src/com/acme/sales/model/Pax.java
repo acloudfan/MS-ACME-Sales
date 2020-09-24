@@ -3,7 +3,7 @@ package com.acme.sales.model;
 /**
  * Strategic Pattern: Value Object
  * Model: Acme Sales
- * Represents a Pax or Passenger
+ * Represents a Pax or Passengers
  */
 
 public class Pax {
