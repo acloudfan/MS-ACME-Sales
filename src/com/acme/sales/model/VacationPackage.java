@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Strategic Pattern: Entity
  * Model: Acme Sales
- * Represents a Vacation Product
+ * Represents a Vacation Package
  */
 public class VacationPackage {
     // Unique Identity of the product
