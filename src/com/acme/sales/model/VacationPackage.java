@@ -41,21 +41,4 @@ public class VacationPackage {
     private boolean soldOut;
 
 
-
-    /**
-     * Behavior
-     **/
-
-    /**
-     * Check the availability
-     * Takes the argument - number of persons
-     **/
-    public  boolean checkAvailability(int numPersons){
-        return true;
-    }
-
-
-    /**
-     * Getters & Setters
-     **/
 }
