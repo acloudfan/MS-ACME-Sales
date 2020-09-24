@@ -8,7 +8,7 @@ import java.util.Date;
  * Represents a Vacation Package
  */
 public class VacationPackage {
-    // Unique Identity of the product
+    // Unique Identity of the package
     // Think of this as a technical identity which does not have a meaning in business domain
     private int    id;
 
