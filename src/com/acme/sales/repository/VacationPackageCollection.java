@@ -1,5 +1,6 @@
 package com.acme.sales.repository;
 
+import com.acme.sales.model.CustomerSpecification;
 import com.acme.sales.model.VacationPackage;
 
 import java.util.List;
@@ -19,6 +20,6 @@ public interface VacationPackageCollection {
     VacationPackage getVacationPackage(String name);
 
     // Lookup vacation packages
-    List<VacationPackage> findVacationPackage(String destination, int vacationType, );
+    List<VacationPackage> findVacationPackage(CustomerSpecification customerSpecification);
 
 }

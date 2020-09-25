@@ -1,5 +1,6 @@
 package com.acme.sales.repository.dao;
 
+import com.acme.sales.model.CustomerSpecification;
 import com.acme.sales.model.VacationPackage;
 
 import java.util.List;
@@ -10,5 +11,10 @@ import java.util.List;
  */
 public interface VacationPackageDAO {
 
+    // CRUD operations
+    VacationPackage  createVacationPackage(VacationPackage vacationPackage);
+    VacationPackage  getVacationPackage(CustomerSpecification customerSpecification);
+    int              deleteVacationPackage(VacationPackage vacationPackage);
+    int              updateVacationPackage(VacationPackage vacationPackage);
 
 }

@@ -12,6 +12,8 @@ import java.util.Date;
  * Created when a customer calls ACME to buy package. Customer may request creation of multiple proposals
  * Model: Acme Sales
  * Represents the sale proposal prepared for the customer
+ *
+ * Proposal ALSO has a customer specifications i.e., preferences
  */
 public class Proposal {
 
@@ -54,6 +56,10 @@ public class Proposal {
 
     // Proposal status
     private Status  status=Status.UNKNOWN;
+
+    // Customer specifications
+    private CustomerSpecification   customerSpecification;
+
 
 
     /**
