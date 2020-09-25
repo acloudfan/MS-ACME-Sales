@@ -40,5 +40,7 @@ public class VacationPackage {
     // Indicates if the product is sold out
     private boolean soldOut;
 
-
+    // This is the destination city
+    // In case of cruise it is the port of origin
+    private String destination;
 }
