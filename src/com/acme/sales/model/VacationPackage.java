@@ -127,4 +127,10 @@ public class VacationPackage {
     public void setDestination(String destination) {
         this.destination = destination;
     }
+
+    /** Equals method **/
+    @Override
+    public boolean equals(Object obj) {
+        return this.getName().equals(((VacationPackage)obj).getName());
+    }
 }

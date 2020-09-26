@@ -10,6 +10,7 @@ package com.acme.sales.model;
  */
 public class CustomerSpecification {
 
+    private final String  vacationPackageName;
     // Destination city - identified by the airport code
     private  final String destination;
 
@@ -21,9 +22,21 @@ public class CustomerSpecification {
     private  final int     minNights;
     private  final int     maxNights;
 
+    public CustomerSpecification(String vacationPackageName){
+        this.vacationPackageName=vacationPackageName;
+        destination=null;
+        minAmountSpend=0; maxAmountSpend=0;
+        minNights=0; maxNights=0;
+    }
+
     // Constructor
+    // Identify vacation package by Name
+    //    - if name is null then  that means any
+    //    - If name not null then all other criteria are ignored
+    //
     // A null destination represents ANY destination
-    public CustomerSpecification(String destination, double minAmountSpend, double maxAmountSpend, int minNights, int maxNights) {
+    public CustomerSpecification(String vacationPackageName, String destination, double minAmountSpend, double maxAmountSpend, int minNights, int maxNights) {
+        this.vacationPackageName = vacationPackageName;
         this.destination = destination;
         this.minAmountSpend = minAmountSpend;
         this.maxAmountSpend = maxAmountSpend;
@@ -32,6 +45,11 @@ public class CustomerSpecification {
     }
 
     public boolean isSatisfiedBy(VacationPackage  vacationPackage){
+
+        // Remember each package has a unique name -- so if the package is found then we do not need to check further
+        if(this.vacationPackageName != null && this.vacationPackageName.equalsIgnoreCase(vacationPackage.getName())){
+            return true;
+        }
 
         // Check destination match
         // A null destination means ANY destination

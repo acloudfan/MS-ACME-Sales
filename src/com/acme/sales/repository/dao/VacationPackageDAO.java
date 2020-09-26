@@ -11,10 +11,16 @@ import java.util.List;
  */
 public interface VacationPackageDAO {
 
-    // CRUD operations
+    /* Creates the vacation package */
     VacationPackage  createVacationPackage(VacationPackage vacationPackage);
-    VacationPackage  getVacationPackage(CustomerSpecification customerSpecification);
+
+    /* Returns the vacation packages that are active **/
+    List<VacationPackage>  retrieveActiveVacationPackage();
+
+    /* Delete the specified package **/
     int              deleteVacationPackage(VacationPackage vacationPackage);
+
+    /* Update the Vacation package */
     int              updateVacationPackage(VacationPackage vacationPackage);
 
 }
