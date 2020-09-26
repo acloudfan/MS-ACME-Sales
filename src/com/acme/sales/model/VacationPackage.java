@@ -9,7 +9,7 @@ import java.util.Date;
  */
 public class VacationPackage {
     // Unique Identity of the product
-    // Think of this as a technical identity which does not have a meaning in business domain
+    // Think of this as a technical identity which does not have a meaning in the business domain
     private int    id;
 
     // Name for the product - pseudo identity
@@ -44,6 +44,14 @@ public class VacationPackage {
     // In case of cruise it is the port of origin
     private String destination;
 
+    /**
+     * Constructor
+     **/
+    public VacationPackage(String name, String description, int numberOfNights){
+        this.setName(name);
+        this.setDescription(description);
+        this.setNumberOfNights(numberOfNights);
+    }
 
     /**
      * Getters & Setters
