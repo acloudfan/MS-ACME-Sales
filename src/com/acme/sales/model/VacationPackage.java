@@ -141,4 +141,9 @@ public class VacationPackage {
     public boolean equals(Object obj) {
         return this.getName().equals(((VacationPackage)obj).getName());
     }
+
+    /** toString method **/
+    public String toString(){
+        return "{"+this.getName()+", "+this.getDescription()+", "+this.getDestination()+"}";
+    }
 }

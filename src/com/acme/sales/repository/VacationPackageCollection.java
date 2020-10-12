@@ -46,6 +46,10 @@ public class VacationPackageCollection {
         return true;
     }
 
+    public List <VacationPackage>  getAllVacationPackage(){
+        return collection;
+    }
+
     /**
      * In actual implementation a SQL or NoSQL critera will be created based on the elemenst in the specification
      * @param customerSpecification
