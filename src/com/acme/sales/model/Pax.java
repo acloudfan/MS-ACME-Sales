@@ -1,12 +1,13 @@
 package com.acme.sales.model;
 
 /**
- * Strategic Pattern: Value Object
+ * Strategic Pattern: Entity
  * Model: Acme Sales
  * Represents a Pax or Passengers
  */
 
 public class Pax {
+
     // Name
     public final String fName;
     public final String mName;
