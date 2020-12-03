@@ -2,6 +2,7 @@ package com.acme.sales.model;
 
 /**
  * Strategic Pattern: Entity
+ * Persistence: Stored in DB as a unique object
  * Model: Acme Sales
  * Represents a Customer
  */
@@ -14,12 +15,7 @@ public class Customer {
     // This is an alternate way to identify the customer
     public String phoneNumber;
 
-    // Address
-    public final String addressLine1;
-    public final String city;
-    public final String state;
-    public final String zipcode;
-    public final boolean contactInformationValidated;
+    public Address address;
 
     // Name
     public final String fName;
@@ -29,37 +25,16 @@ public class Customer {
     /**
      * Constructor - first time creation of the object would require the contact information to be validated
      */
-    public Customer(String fName, String mName, String lName, ContactInformation ci) {
+    public Customer(String fName, String mName, String lName, Address address, String phoneNumber, String email) {
         this.fName = fName;
         this.mName = mName;
         this.lName = lName;
 
-        contactInformationValidated = ci.isValid();
+        this.address = address;
 
-        this.addressLine1 = ci.addressLine1;
-        this.city=ci.city;
-        this.zipcode=ci.zipcode;
-        this.state=ci.state;
-        this.phoneNumber=ci.phoneNumber;
-        this.email=ci.email;
+        this.phoneNumber=phoneNumber;
+        this.email=email;
     }
 
-    /**
-     * Constructor
-     */
-    public Customer(String fName, String mName, String lName, String email, String phoneNumber, String addressLine1, String city, String state, String zipcode, boolean contactInformationValidated) {
 
-        this.fName = fName;
-        this.mName = mName;
-        this.lName = lName;
-
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.addressLine1 = addressLine1;
-        this.city = city;
-        this.state = state;
-        this.zipcode = zipcode;
-
-        this.contactInformationValidated = contactInformationValidated;
-    }
 }
