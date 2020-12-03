@@ -30,13 +30,4 @@ public class Offer {
         this.validTill = validTill;
     }
 
-    /** Behavior **/
-
-    /**
-     * This applies the offer to the Vacation Product
-     * @return product price after the calculations
-     */
-    public double applyOffer(Proposal proposal){
-        return 0.0;
-    }
 }

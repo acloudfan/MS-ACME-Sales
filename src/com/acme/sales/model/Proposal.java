@@ -76,9 +76,17 @@ public class Proposal {
         return "";
     }
 
-    /** Book the package **/
+    /**
+     * Book the package
+     */
     public boolean bookPackage(){
         return true;
     }
 
+    /**
+     * This applies the offer to the Vacation Product
+     */
+    public double applyOffer(Offer  offer){
+        return 0.0;
+    }
 }
