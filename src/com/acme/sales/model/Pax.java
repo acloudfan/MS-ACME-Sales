@@ -1,7 +1,7 @@
 package com.acme.sales.model;
 
 /**
- * Strategic Pattern: Entity
+ * Strategic Pattern: Value Object
  * Model: Acme Sales
  * Represents a Pax or Passengers
  */
