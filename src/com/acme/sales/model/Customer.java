@@ -14,7 +14,6 @@ public class Customer {
 
     // This is an alternate way to identify the customer
     public String phoneNumber;
-
     public Address address;
 
     // Name
