@@ -2,6 +2,7 @@ package com.acme.sales.model;
 
 /**
  * Strategic Pattern: Value Object
+ * Persistence: Not persisted to the DB
  * Model: Acme Sales
  * Used for the validation of email & phone number
  */

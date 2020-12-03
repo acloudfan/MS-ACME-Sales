@@ -2,6 +2,7 @@ package com.acme.sales.model;
 
 /**
  * Strategic Pattern: Value Object
+ * Persistence: Stored as part of the proposal
  * Model: Acme Sales
  * Represents a Pax or Passengers
  */
