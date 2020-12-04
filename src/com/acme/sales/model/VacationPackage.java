@@ -8,12 +8,9 @@ import java.util.Date;
  * Represents a Vacation Package
  */
 public class VacationPackage {
-    // Unique Identity of the package
-    // Think of this as a technical identity which does not have a meaning in business domain
-    private int    id;
 
     // Name for the product - pseudo identity
-    // Sales agent know the product by this
+    // Sales agent know the product by this Identity i.e., meaningful in business domain
     private String name;
 
     // Friendly description
