@@ -1,0 +1,14 @@
+@startuml
+
+
+
+autonumber
+SalesAgent -> BookingConfirmation: process payment
+BookingConfirmation -> PaymentService : process payment
+PaymentService -> PaymentGateway : process payment
+PaymentGateway -> PaymentService : payment confirmation
+PaymentService -> BookingConfirmation : payment confirmation
+
+BookingConfirmation -> BookingConfirmation : Raise PaymentConfirmd
+
+@enduml

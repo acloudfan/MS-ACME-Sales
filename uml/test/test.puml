@@ -1,0 +1,15 @@
+@startuml
+skinparam monochrome true
+' Remove shadows
+skinparam shadowing false
+
+cloud x
+
+database " ss"
+
+'class ok {
+
+'==
+'<<domain event> SomethinhHappened
+'}
+@enduml
