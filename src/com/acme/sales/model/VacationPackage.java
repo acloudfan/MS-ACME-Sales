@@ -82,7 +82,7 @@ public class VacationPackage {
         ArrayList<Reservation>  generated = new ArrayList<Reservation>();
         // Iterate over the holders and create the clones
         for(Reservation r : reservationHolders){
-            generated.add(r.createClone());
+           // generated.add(r.createClone());
         }
         return generated;
     }

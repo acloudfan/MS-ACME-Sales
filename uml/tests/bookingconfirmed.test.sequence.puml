@@ -1,0 +1,17 @@
+@startuml
+
+
+
+(*)  --> "PaymentAuditTest"
+If "RabbitMQ Exchange is created" then
+--> [Yes] "Setup the <b>Messaging Service</b>"
+--> "Create instance of PubSubService"
+--> "Set the <b>Message Service on BookingConfirmedRepo </b>"
+--> "Run the PaymentAuditTest class"
+--> "BookingConfirmed <b>event published to RabbitMQ</b>"
+-->(*)
+else
+--> "Run Test with <b>Messaging Disabled</b>"
+Endif
+-->(*)
+@enduml

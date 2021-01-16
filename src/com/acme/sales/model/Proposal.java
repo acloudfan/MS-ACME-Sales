@@ -132,7 +132,8 @@ public class Proposal {
      */
     public boolean setupReservationDates(int index, Date startDate, Date  endDate){
         if(index >= reservations.size() ) return false;
-        return reservations.get(index).setupDates(startDate,endDate);
+       // return reservations.get(index).setupDates(startDate,endDate);
+        return true;
     }
 
     /**
@@ -143,7 +144,7 @@ public class Proposal {
         ArrayList<Reservation>  generated = new ArrayList<Reservation>();
         // Iterate over the holders and create the clones
         for(Reservation r : reservations){
-            generated.add(r.createClone());
+           // generated.add(r.createClone());
         }
         return generated;
     }
@@ -155,7 +156,7 @@ public class Proposal {
 
         str += "[";
         for(Reservation r : this.reservations){
-            str += "\t" + r + "{ Dates= "+r.getStartDate()+" to "+r.getEndDate()+"}" ;
+            str += "\t" + r ; //+ "{ Dates= "+r.getStartDate()+" to "+r.getEndDate()+"}" ;
         }
         str += "]";
 
