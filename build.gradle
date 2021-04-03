@@ -20,4 +20,12 @@ sourceSets {
 dependencies {
     //    https://www.rabbitmq.com/java-client.html
     compile 'com.rabbitmq:amqp-client:5.10.0'
+    compile 'org.postgresql:postgresql:9.2-1003-jdbc4'
+    testCompile 'org.postgresql:postgresql:9.2-1003-jdbc4'
+    compile 'org.json:json:20141113'
+    compile 'org.mongodb:mongodb-driver:3.6.3'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.3.9.RELEASE'
+    implementation 'com.graphql-java:graphql-java:11.0'
+    implementation 'com.graphql-java:graphql-java-spring-boot-starter-webmvc:1.0'
+    implementation 'com.google.guava:guava:26.0-jre'
 }
